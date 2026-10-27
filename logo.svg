@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><rect width="1024" height="1024" rx="224" fill="#1a1b20"/><defs>
+  <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="459" y1="137" x2="564" y2="922"><stop offset="0" stop-color="#66a898"/><stop offset=".5" stop-color="#3a8670"/><stop offset="1" stop-color="#1f5f50"/></linearGradient>
+  <linearGradient id="rim" gradientUnits="userSpaceOnUse" x1="0" y1="137" x2="0" y2="922"><stop offset="0" stop-color="#b4ead7"/><stop offset=".5" stop-color="#6fbfa6"/><stop offset="1" stop-color="#3f8f7a"/></linearGradient>
+  <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="0" y1="137" x2="0" y2="560"><stop offset="0" stop-color="#e6fff6" stop-opacity="0"/><stop offset="1" stop-color="#e6fff6" stop-opacity="0"/></linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30"/></filter>
+  <g id="s"><circle cx="512" cy="324" r="187"/><circle cx="332" cy="566" r="187"/><circle cx="692" cy="566" r="187"/><circle cx="512" cy="465" r="110"/><path d="M460 540 C 454 740 430 850 344 919.6 Q 340 922 345.6 922 L 678.4 922 Q 684 922 680 919.6 C 594 850 570 740 564 540 Z"/></g><clipPath id="cp"><use href="#s"/></clipPath></defs>
+  <use href="#s" fill="#2f8f78" opacity="0.3" filter="url(#glow)"/>
+  <use href="#s" fill="url(#rim)" stroke="url(#rim)" stroke-width="12" stroke-linejoin="round"/>
+  <use href="#s" fill="url(#g)"/></svg>
