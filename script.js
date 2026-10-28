@@ -5,7 +5,7 @@ surDefilement();
 window.addEventListener("scroll", surDefilement, { passive: true });
 
 // Apparition progressive des blocs quand ils entrent à l'écran.
-const blocs = document.querySelectorAll(".card, .persona__item, .faq details, .mock");
+const blocs = document.querySelectorAll(".card, .persona__item, .faq details, .shot");
 blocs.forEach((el) => el.classList.add("reveal"));
 
 if ("IntersectionObserver" in window) {

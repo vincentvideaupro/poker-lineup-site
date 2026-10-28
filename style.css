@@ -112,55 +112,15 @@ h3 { font-size: 20px; margin-bottom: 8px; }
 .hero__inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
-/* Maquette fiche adversaire */
-.mock {
-  background: var(--surface);
+/* Captures de l'app */
+.hero__visual { display: flex; justify-content: center; }
+.shot {
+  display: block; width: 100%; height: auto; border-radius: 28px;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow), 0 0 80px var(--accent-glow);
-  overflow: hidden;
-  transform: perspective(1400px) rotateY(-6deg) rotateX(2deg);
+  box-shadow: var(--shadow);
 }
-.mock__bar {
-  display: flex; align-items: center; gap: 7px;
-  padding: 12px 16px; background: var(--surface-2);
-  border-bottom: 1px solid var(--border);
-  font-size: 12px; color: var(--muted);
-}
-.mock__bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--border); }
-.mock__bar span { margin-left: 10px; }
-.mock__body { padding: 22px; }
-.mock__head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
-.mock__head strong { display: block; font-size: 17px; }
-.mock__head small { color: var(--muted); font-size: 12px; }
-.mock__head .pill { margin-left: auto; }
-.avatar {
-  width: 46px; height: 46px; border-radius: 50%;
-  display: grid; place-items: center; font-weight: 700;
-  background: linear-gradient(to bottom, var(--seat-top), var(--seat-bottom)); color: var(--text);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.13), 0 4px 10px -4px rgba(0,0,0,.8);
-}
-.pill { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; }
-.pill--green { background: color-mix(in oklch, var(--accent) 14%, transparent); color: var(--accent); }
-.notes { display: grid; gap: 10px; }
-.notes li {
-  background: var(--bg); border: 1px solid var(--border);
-  border-radius: 10px; padding: 12px 14px; font-size: 14px; color: var(--muted);
-}
-.tag {
-  display: inline-block; font-size: 11px; font-weight: 600;
-  padding: 2px 9px; border-radius: 6px; margin-right: 8px;
-  background: var(--surface-2); color: var(--text);
-}
-.mock__foot {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);
-  font-size: 13px; color: var(--accent); font-weight: 500;
-}
-kbd {
-  font-family: inherit; font-size: 11px; color: var(--muted);
-  border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px;
-}
+.shot--hero { max-width: 320px; box-shadow: var(--shadow), 0 0 80px var(--accent-glow); }
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
 
 /* Sections */
 .section { padding: 110px 0; }
@@ -214,7 +174,8 @@ kbd {
   .nav__links { display: none; }
   .hero__inner { grid-template-columns: 1fr; }
   .hero { padding: 48px 0 64px; }
-  .mock { transform: none; }
+  .gallery { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .shot--hero { max-width: 260px; }
   .cards--3 { grid-template-columns: 1fr; }
   .section { padding: 72px 0; }
   .persona { grid-template-columns: 1fr; }
@@ -225,3 +186,16 @@ kbd {
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card { transition: none; }
 }
+
+/* Page « Legal notice » */
+.legal { padding: 64px 0 96px; }
+.legal h1 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 8px; }
+.legal h2 { font-size: 20px; margin: 36px 0 10px; }
+.legal p, .legal li { color: var(--muted); font-size: 16px; margin-bottom: 8px; }
+.legal li { list-style: none; }
+.legal a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.legal__draft {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 12px; padding: 16px 20px; margin: 24px 0; color: var(--text); font-size: 15px;
+}
+.todo { color: var(--text); background: var(--surface-2); border-radius: 6px; padding: 1px 8px; }
